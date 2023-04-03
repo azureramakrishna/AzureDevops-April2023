@@ -1,2 +1,5 @@
+Understand the structure and syntax of ARM templates
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/syntax
+
 Deploy resources with ARM templates and Azure PowerShell
 https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-powershell
