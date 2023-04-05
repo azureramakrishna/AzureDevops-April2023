@@ -6,3 +6,16 @@ https://learn.microsoft.com/en-us/azure/templates/
 
 Deploy resources with ARM templates and Azure PowerShell
 https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-powershell
+
+Microsoft.Compute virtualMachines
+https://learn.microsoft.com/en-us/azure/templates/microsoft.compute/virtualmachines?pivots=deployment-language-arm-template
+
+Use Azure Key Vault to pass secure parameter value during deployment
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/key-vault-parameter?tabs=azure-cli
+
+
+Custom Script Extension for Windows
+https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows
+
+Using disks in Azure Resource Manager Templates
+https://learn.microsoft.com/en-us/azure/virtual-machines/using-managed-disks-template-deployments
