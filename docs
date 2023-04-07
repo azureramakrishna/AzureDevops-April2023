@@ -19,3 +19,19 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-scrip
 
 Using disks in Azure Resource Manager Templates
 https://learn.microsoft.com/en-us/azure/virtual-machines/using-managed-disks-template-deployments
+
+Azure Quick start templates
+https://github.com/azureramakrishna/azure-quickstart-templates
+
+Create multiple resource instances with ARM templates
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-tutorial-create-multiple-instances?tabs=CLI%2Cazure-cli
+
+Parameters in ARM templates and types
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/parameters
+
+Azure Resource Manager deployment modes
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes
+
+Change the size of a virtual machine
+https://learn.microsoft.com/en-us/azure/virtual-machines/resize-vm?tabs=powershell
+
