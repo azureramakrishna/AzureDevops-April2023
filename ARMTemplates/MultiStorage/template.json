@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "storage_account_name": {
+         "type": "string",
+         "metadata": {
+              "description": "Name of the storage account"
+          }
+      },
+      "location": {
+         "type": "string",
+         "metadata": {
+              "description": "location of the resource"
+          },
+          "defaultValue": "[resourceGroup().location]"
+      },
+      "storage_sku": {
+         "type": "string",
+         "metadata": {
+              "description": "storage account SKU"
+          },
+          "allowedValues": [
+            "Premium_LRS",
+            "Premium_ZRS",
+            "Standard_GRS",
+            "Standard_GZRS",
+            "Standard_LRS",
+            "Standard_RAGRS",
+            "Standard_RAGZRS",
+            "Standard_ZRS"
+          ],
+          "defaultValue": "Standard_LRS"
+      },
+      "count_vaule": {
+         "type": "int"         
+      }
+    },
+    "variables": {
+        "tags": {
+            "environment": "Dev",
+            "project": "SAANVIK IT",
+            "createdby": "Ramakrishna",
+            "costcenter": 10000
+        }
+    },
+    "resources": [
+            {
+                "type": "Microsoft.Storage/storageAccounts",
+                "apiVersion": "2021-01-01",
+                "name": "[concat(toLower(parameters('storage_account_name')),copyIndex(1))]",
+                "location": "[parameters('location')]",
+                "tags": "[variables('tags')]",
+                "kind": "StorageV2",
+                "copy": {
+                "name": "storageCopy",
+                "count": "[parameters('count_vaule')]"
+                },
+                "sku": {
+                    "name": "[parameters('storage_sku')]"
+                }
+            }
+
+    ],
+    "outputs": {}
+}
