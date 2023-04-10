@@ -35,3 +35,34 @@ https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploym
 Change the size of a virtual machine
 https://learn.microsoft.com/en-us/azure/virtual-machines/resize-vm?tabs=powershell
 
+Terraform: IAC 
+----------
+
+ARMTemplates										Terraform 
+------------										----------
+1. IAC Tool 										1. IAC Tool 
+2. Specific to Azure 								2. Opensource- Azure, AWS, GCP, onprem etc.
+3. JSON Format										3. HCL(Harshicorp configuration language) Format 
+4. Extension- .JSON 								4. Extension- .tf 
+5. template.json									5. main.tf
+   parameters.json									   variables.tf 
+6. Structure of ARMTemplates 						6. Building blocks:
+   Schema 												Provider
+   Contentversion										Resources 
+   Parameters											Outputs
+   variables
+   resources
+   outputs 
+7. Deploying ARMTemplates 							7. Life cycle of Terraform 
+   New-AzResourceGroupDeployment   						Terraform init
+														Terraform fmt
+   -ResourceGroupName 									Terraform validate
+   -TemplateFile 										Terraform plan 
+   -TemplateParameterFile								Terraform apply 
+   -Verbose												Terraform destroy
+
+
+Getting started with Terraform:
+------------------------------
+Download the terraform: https://developer.hashicorp.com/terraform/downloads
+VSCode Extension- HashiCorp Terraform & Azure Terraform
